@@ -1,23 +1,38 @@
-# JobTeen Web
+# Welcome to Remix!
 
-L'application JobTeen pour le Web
+- [Remix Docs](https://remix.run/docs)
 
-## Comment tester
+## Development
 
-Créer une instance Supabase local en lançant:
-```ssh
-supabase init
+From your terminal:
+
+```sh
+npm run dev
 ```
-avec le CLI Supabase installé.
 
-Créer un fichier *.env.local* à la route du dossier et donner les variables:
+This starts your app in development mode, rebuilding assets on file changes.
 
-```ssh
-<!-- Copier les valeurs donner dans le output de supabase init-->
-NEXT_PUBLIC_SUPABASE_URL=
-NEXT_PUBLIC_SUPABASE_ANON_KEY=
-SUPABASE_SERVICE_ROLE_KEY=
+## Deployment
 
-<!-- Créer un compte Stripe test -->
-STRIPE_SECRET_KEY=
+First, build your app for production:
+
+```sh
+npm run build
 ```
+
+Then run the app in production mode:
+
+```sh
+npm start
+```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `remix build`
+
+- `build/`
+- `public/build/`
