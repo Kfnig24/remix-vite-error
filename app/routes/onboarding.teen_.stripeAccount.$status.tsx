@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server";
 import { getAuth } from "@clerk/remix/ssr.server";
-import { LoaderFunction, redirect } from "@vercel/remix";
+import { LoaderFunction, redirect } from "@remix-run/node";
 import { Link, useLoaderData } from "@remix-run/react";
 import Stripe from "stripe";
 import { Button } from "~/components/ui/button";

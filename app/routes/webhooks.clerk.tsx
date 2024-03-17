@@ -1,5 +1,5 @@
 import { WebhookEvent } from "@clerk/remix/api.server";
-import { ActionFunction, json } from "@vercel/remix";
+import { ActionFunction, json } from "@remix-run/node";
 import prisma from "~/lib/db";
 
 export const action: ActionFunction = async (args) => {

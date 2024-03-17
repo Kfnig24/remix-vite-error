@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server";
 import { getAuth } from "@clerk/remix/ssr.server";
-import { ActionFunction, redirect } from "@vercel/remix";
+import { ActionFunction, redirect } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
 import Stripe from 'stripe'
 import prisma from "~/lib/db";

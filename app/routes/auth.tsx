@@ -1,6 +1,6 @@
 import { getAuth } from "@clerk/remix/ssr.server"
-import type { LoaderFunction, MetaFunction } from "@vercel/remix"
-import { redirect } from "@vercel/remix"
+import type { LoaderFunction, MetaFunction } from "@remix-run/node"
+import { redirect } from "@remix-run/node"
 import { Outlet } from "@remix-run/react"
 
 export const meta: MetaFunction = () => [

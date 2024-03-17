@@ -29,7 +29,7 @@
     "@remix-run/react": "^2.7.2",
     "@remix-run/serve": "^2.7.2",
     "@stripe/stripe-js": "^3.0.5",
-    "@vercel/remix": "^2.8.1-patch.2",
+    "@vercel/remix": "^2.7.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "date-fns": "^3.3.1",

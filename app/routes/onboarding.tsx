@@ -1,5 +1,5 @@
 import { getAuth } from "@clerk/remix/ssr.server"
-import { LoaderFunction, MetaFunction, TypedResponse, redirect } from "@vercel/remix"
+import { LoaderFunction, MetaFunction, TypedResponse, redirect } from "@remix-run/node"
 import { createClerkClient } from '@clerk/remix/api.server'
 import { Outlet, useLoaderData } from "@remix-run/react"
 import Logo from "~/components/logo"

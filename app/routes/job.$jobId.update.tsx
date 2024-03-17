@@ -1,5 +1,5 @@
 import { getAuth } from "@clerk/remix/ssr.server";
-import { ActionFunction, redirect } from "@vercel/remix";
+import { ActionFunction, redirect } from "@remix-run/node";
 import prisma from "~/lib/db";
 
 export const action: ActionFunction = async (args) => {

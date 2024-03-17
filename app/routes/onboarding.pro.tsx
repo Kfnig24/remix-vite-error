@@ -1,6 +1,6 @@
 import { createClerkClient } from '@clerk/remix/api.server'
 import { getAuth } from '@clerk/remix/ssr.server'
-import { ActionFunction, LoaderFunction, redirect } from '@vercel/remix'
+import { ActionFunction, LoaderFunction, redirect } from '@remix-run/node'
 import { Form, useNavigation } from '@remix-run/react'
 import { Loader2 } from 'lucide-react'
 import { Button } from '~/components/ui/button'

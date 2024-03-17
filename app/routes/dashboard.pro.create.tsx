@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server"
 import { getAuth } from "@clerk/remix/ssr.server"
-import { ActionFunction, LoaderFunction, redirect } from "@vercel/remix"
+import { ActionFunction, LoaderFunction, redirect } from "@remix-run/node"
 import { Form, useActionData, useNavigate, useSubmit } from "@remix-run/react"
 import { format } from "date-fns"
 import { fr } from "date-fns/locale"
