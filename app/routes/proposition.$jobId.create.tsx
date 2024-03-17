@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server";
 import { getAuth } from "@clerk/remix/ssr.server";
-import { ActionFunction, redirect } from "@remix-run/node";
+import { ActionFunction, redirect } from "@vercel/remix";
 import invariant from "tiny-invariant";
 import prisma from "~/lib/db";
 

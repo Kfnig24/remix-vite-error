@@ -1,5 +1,5 @@
-import type { LoaderFunction, MetaFunction } from "@remix-run/node";
-import { redirect } from '@remix-run/node'
+import type { LoaderFunction, MetaFunction } from "@vercel/remix";
+import { redirect } from '@vercel/remix'
 import { Link, useNavigate } from "@remix-run/react";
 import Logo from "~/components/logo";
 import Section from "~/components/section";

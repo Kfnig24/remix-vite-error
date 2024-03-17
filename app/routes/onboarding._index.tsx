@@ -3,7 +3,7 @@ import { useEffect } from "react"
 import { Button } from "~/components/ui/button"
 import { FaPersonShelter, FaPersonWalking } from 'react-icons/fa6'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "~/components/ui/select"
-import { ActionFunction, redirect } from "@remix-run/node"
+import { ActionFunction, redirect } from "@vercel/remix"
 import { getAuth } from "@clerk/remix/ssr.server"
 import { createClerkClient } from "@clerk/remix/api.server"
 

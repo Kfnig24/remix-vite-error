@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server"
 import { getAuth } from "@clerk/remix/ssr.server"
-import { LoaderFunction, redirect } from "@remix-run/node"
+import { LoaderFunction, redirect } from "@vercel/remix"
 import { Form, Link, useLoaderData, useNavigation } from "@remix-run/react"
 import { CiCircleCheck } from "react-icons/ci"
 import { MdErrorOutline } from "react-icons/md"

@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server";
 import { getAuth } from "@clerk/remix/ssr.server";
-import { ActionFunction, LoaderFunction, json, redirect } from "@remix-run/node";
+import { ActionFunction, LoaderFunction, json, redirect } from "@vercel/remix";
 import { Form, useActionData, useLoaderData } from "@remix-run/react";
 import { useEffect } from "react";
 import { Button } from "~/components/ui/button";

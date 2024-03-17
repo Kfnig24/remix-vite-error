@@ -1,6 +1,6 @@
 import { createClerkClient } from "@clerk/remix/api.server"
 import { getAuth } from "@clerk/remix/ssr.server"
-import { LoaderFunction, MetaFunction, json, redirect } from "@remix-run/node"
+import { LoaderFunction, MetaFunction, json, redirect } from "@vercel/remix"
 import { Form, Outlet, useLoaderData } from "@remix-run/react"
 import Sidebar from "~/components/sidebar"
 import Topbar from "~/components/topbar"

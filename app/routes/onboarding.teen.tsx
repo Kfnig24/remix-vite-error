@@ -7,7 +7,7 @@ import { fr } from "date-fns/locale"
 import { CalendarIcon } from 'lucide-react'
 import { Calendar } from '~/components/ui/calendar'
 import { AlertDialog, AlertDialogContent, AlertDialogDescription, AlertDialogFooter, AlertDialogHeader, AlertDialogTitle } from '~/components/ui/alert-dialog'
-import { ActionFunction, LoaderFunction, json, redirect } from '@remix-run/node'
+import { ActionFunction, LoaderFunction, json, redirect } from '@vercel/remix'
 import { getAuth } from '@clerk/remix/ssr.server'
 import { Form, Link, useFetcher, useLoaderData } from '@remix-run/react'
 import { createClerkClient } from '@clerk/remix/api.server'
