@@ -11,7 +11,6 @@ const Topbar = ({ links, first_name }: { links: NavLinks[], first_name: string }
 
             <div>
                 <UserButton />
-
             </div>
 
             <div className="lg:hidden">

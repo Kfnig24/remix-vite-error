@@ -1,22 +1,18 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderFunction } from "@remix-run/node";
 import {
-  Links,
-  LiveReload,
-  Meta,
+  Links, Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration
 } from "@remix-run/react";
-import styles from '~/tailwind.css'
+import styles from '~/tailwind.css?url';
 import { Toaster } from "./components/ui/toaster";
-import { rootAuthLoader } from "@clerk/remix/ssr.server"
-import { ClerkApp, ClerkErrorBoundary } from '@clerk/remix'
-import { frFR } from '@clerk/localizations'
+import { rootAuthLoader } from "@clerk/remix/ssr.server";
+import { ClerkApp, ClerkErrorBoundary } from '@clerk/remix';
+import { frFR } from '@clerk/localizations';
 
 export const links: LinksFunction = () => [
-  { rel: 'stylesheet', href: styles },
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
+  { rel: 'stylesheet', href: styles }
 ];
 
 export const loader: LoaderFunction = (args) => rootAuthLoader(args, { publishableKey: process.env.CLERK_PUBLISHABLE_KEY, secretKey: process.env.CLERK_SECRET_KEY })
@@ -36,11 +32,10 @@ function App() {
         <Outlet />
         <ScrollRestoration />
         <Scripts />
-        <LiveReload />
         <Toaster />
       </body>
     </html>
   );
 }
 
-export default ClerkApp(App, { localization: frFR, appearance: {variables: { colorPrimary: '#7c3aed' }} })
+export default ClerkApp(App, { localization: frFR, appearance: { variables: { colorPrimary: '#7c3aed' } } })
