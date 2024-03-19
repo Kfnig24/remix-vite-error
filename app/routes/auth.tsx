@@ -3,9 +3,6 @@ import type { LoaderFunction, MetaFunction } from "@remix-run/node"
 import { redirect } from "@remix-run/node"
 import { Outlet } from "@remix-run/react"
 
-export const meta: MetaFunction = () => [
-  { title: "Se connecter sur JobTeen" }
-]
 
 export const loader: LoaderFunction = async (args) => {
   const { userId } = await getAuth(args)
